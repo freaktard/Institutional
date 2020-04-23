@@ -8,12 +8,33 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Institution.Models;
+using Institution.Interffaces;
 
 namespace Institution.Controllers
 {
-    public class StudentsController : Controller
+    public class StudentsControllerTest : Controller
     {
+        
         private StudentsContext db = new StudentsContext();
+
+        ////CREATE METTHOD TEST
+        //private readonly StudentRepository studentRepository;
+        //public StudentsControllerTest(StudentRepository studentRepository)
+        //{
+        //    this.studentRepository = studentRepository;
+        //}
+        //[HttpPost]
+        //public ActionResult Create(Student student)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        this.studentRepository.InsertOrUpdate(student);
+        //        this.studentRepository.save();
+        //        return RedirectToAction("Index");
+        //    }
+        //    return this.View();
+        //}
+        //---------------------------------------------------------
 
         // GET: Students
         public async Task<ActionResult> Index()

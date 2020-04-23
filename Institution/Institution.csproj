@@ -227,6 +227,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interffaces\StudentRepository.cs" />
     <Compile Include="Model entities\Courses.cs" />
     <Compile Include="Models\Course.cs">
       <DependentUpon>StudentModel.tt</DependentUpon>
